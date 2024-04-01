@@ -1,0 +1,21 @@
+<template>
+    <div class="userDetailsAndStatsWrapper">
+        <!-- component library layout-item for responsiveness -->
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12">
+                <c-portfolio-user-detail
+                record-id = {recordId}
+                object-api-name={objectApiName}></c-portfolio-user-detail>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12">
+                <c-portfolio-user-stats
+                rank={rank}
+                badges={badges}
+                points={points}
+                trails={trails}></c-portfolio-user-stats>
+            </lightning-layout-item>
+        </lightning-layout>
+
+    </div>
+</template>

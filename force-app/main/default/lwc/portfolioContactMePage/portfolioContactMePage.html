@@ -1,0 +1,65 @@
+<template>
+    <div class="container">
+        <div class="image-column">
+          <img src={msg_image} alt="Message image">
+        </div>
+        <div class="form-column">
+            
+                <h2>Thank you for visiting my portfolio. Please sign the sign below form to let me know you took a tour or intrested in hiring me!!</h2>
+          <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5h0000091Svb" method="POST">
+
+            <input type=hidden name="oid" value="00D5h0000091Svb">
+            <input type=hidden name="retURL" value="https://ajsd141-dev-ed.develop.my.site.com/thankyoupage/">  
+            
+            <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/>   
+            </div>
+
+            <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input  id="company" maxlength="40" name="company" size="20" type="text" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input  id="email" maxlength="80" name="email" size="20" type="email" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input  id="phone" maxlength="40" name="phone" size="20" type="tel"/>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea name="description"></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+
+          
+
+           <!--
+            <template if:false={isShowForm}>
+                <div class="content">
+                    <h1>Thank You!</h1>
+                    <p>Your message has been successfully submitted.</p>
+                </div>
+            </template>
+           --> 
+        </div>
+
+        
+    </div>
+      
+    
+</template>

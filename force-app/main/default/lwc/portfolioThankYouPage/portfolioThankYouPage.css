@@ -1,0 +1,21 @@
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .content {
+    text-align: center;
+  }
+
+  h1{
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .social-icon{
+    height:60px;
+    width: 60px;
+    margin: 16px 16px 0px 0px;
+}
